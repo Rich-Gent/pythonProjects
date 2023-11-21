@@ -1,5 +1,7 @@
 cipher = input("Input Cipher: ")
+cipher = cipher.upper()
 key = input("Input your key: ")
+key = key.upper()
 decode=[]
 for i in range(len(cipher)):
     if(ord(cipher[i])>=ord(key[i%len(key)])):
